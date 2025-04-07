@@ -1,0 +1,21 @@
+/* Default button styles */
+.btn-primary {
+    background: var(--color-primary);
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 500;
+    display: inline-flex;
+    border-radius: 32px;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    line-height: 1.2;  
+  }
+  
+  /* Responsive Padding */
+  @media (min-width: 1024px) {
+    .btn-primary {
+      padding: 1rem 2rem;
+    }
+  }
+  

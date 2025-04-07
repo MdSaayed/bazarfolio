@@ -7,3 +7,4 @@ export { default as Subtitle } from  './subtitle/Subtitle';
 export { default as Title } from  './title/Title';
 export { default as Description } from  './description/Description';
 export { default as AboutOne } from  './about/AboutOne';
+export { default as Stats } from  './stats/Stats';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Subtitle, Description, Button} from '../../components';
+import { Subtitle, Description, Button, Stats} from '../../components';
 import  Sleek from "/assets/images/sleek-metallic.svg";
 import  PhoneOnText from "/assets/images/phone-inside-text.svg";
 import  Aboutimage from "/assets/images/about-1.png";
@@ -27,6 +27,9 @@ const AboutOne = () => {
                 <div className='mt-20'>
                     <img className='w-full' src={Aboutimage} alt="About" />
                 </div>
+
+                {/* Stats */}
+                <Stats />
             </div>
         </section>
     );
