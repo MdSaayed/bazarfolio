@@ -6,7 +6,7 @@ const Button = ({ text, icon = true, to = "/" }) => {
   return (
     <Link
       to={to}
-      className="bg-yellow-600 text-white text-xl leading-[1.2] font-medium py-4 px-6 rounded-4xl inline-flex items-center gap-4"
+      className="btn-primary"
     >
       <span>{text}</span>
       {icon && (

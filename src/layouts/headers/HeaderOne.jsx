@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import ResponsiveMenu from '../../components/responsive-menu/ResponsiveMenu';
-import DesktopMenu from '../../components/desktop-menu/DesktopMenu';
-
+import { DesktopMenu, ResponsiveMenu } from '../../components';
+ 
 const HeaderOne = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -15,7 +14,7 @@ const HeaderOne = () => {
       ];
 
     return (
-        <header className='bg-gray-950'>
+        <header className='bg-blue-gray'>
             <div className="container padding-y-0">
                 {/* Desktop menu */}
                 <DesktopMenu menuItems={menuItems} setMenuOpen={setMenuOpen}/>
