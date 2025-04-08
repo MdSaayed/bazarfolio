@@ -60,30 +60,23 @@
 
   /* Subtitle style */
   .subtitle {
-    position: relative;
-    padding-left: 20px; 
-    display: inline-block;
-    color: var(--color-blue-gray);
+    display: flex;
+    align-items: center;
     font-size: var(--text-xl);
     font-weight: 500;
     line-height: 1.2;
   }
   
-  .subtitle::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+  .subtitle span {
+    display: inline-block;
+    margin-right: 15px;
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background-color: var(--color-blue-gray);
   }
   
   .gradient-text {
-    font-size: 3rem;
-    font-weight: bold;
+    font-weight: 600;
     background: linear-gradient(91deg, #FFF 0.35%, #999 61.17%);
     -webkit-background-clip: text;
     background-clip: text;

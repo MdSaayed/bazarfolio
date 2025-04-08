@@ -43,10 +43,16 @@ const Stats = () => {
               border-gray-300
             `}
           >
-            <h3 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight text-black text-center ">
-              <CountUp end={item.number} duration={2} />{item.suffix}
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight text-black text-center">
+              <CountUp
+                end={item.number}
+                duration={2}
+                enableScrollSpy
+                scrollSpyDelay={100}
+              />
+              {item.suffix}
             </h3>
-            <p className="text-base font-normal text-blue-gray tracking-desc text-center  mt-3">
+            <p className="text-base font-normal text-blue-gray tracking-desc text-center mt-3">
               {item.label}
             </p>
           </div>

@@ -1,15 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Subtitle = ({ text='Add Your Subtitle', styleClass= "", textColor='text-White' }) => {
+const Subtitle = ({ text = 'Add Your Subtitle', styleClass = "", textColor = 'blue-gray' }) => {
   return (
-    <span className={`subtitle ${styleClass} ${textColor}`}>
-      {text}
-    </span>
+    <p className={`subtitle ${styleClass} text-${textColor}`}>
+      <span className={`bg-${textColor}`}></span> {text}
+    </p>
   );
 };
 
-// ✅ PropTypes define
 Subtitle.propTypes = {
   text: PropTypes.string.isRequired,
   styleClass: PropTypes.string,

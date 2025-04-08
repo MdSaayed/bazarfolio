@@ -8,3 +8,5 @@ export { default as Title } from  './title/Title';
 export { default as Description } from  './description/Description';
 export { default as AboutOne } from  './about/AboutOne';
 export { default as Stats } from  './stats/Stats';
+export { default as ServicesOne } from  './services/ServicesOne';
+export { default as Works } from  './works/Works';

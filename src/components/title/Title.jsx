@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Title = ({ text, styleClass = 'text-white',textColor='text-white'}) => {
+const Title = ({ text, styleClass = 'text-white',textColor='white'}) => {
   return (
-    <h2 className={`text-[2rem] font-semibold mt-4 ${styleClass} ${textColor}`}>
+    <h2 className={`text-[2rem] font-semibold mt-4 ${styleClass} text-${textColor}`}>
       {text}
     </h2>
   );
