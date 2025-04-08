@@ -1,9 +1,18 @@
 import React from 'react';
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
-import Rating from 'react-rating';
+import { Rating } from '@smastrom/react-rating';
+import '@smastrom/react-rating/style.css';
 
 const CardOne = ({ item }) => {
   const rating = item?.rating || 0;
+
+   // Custom star SVG component
+   const Star = (
+    <path
+      d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+    />
+  );
+
 
   return (
     <div
@@ -14,7 +23,7 @@ const CardOne = ({ item }) => {
       <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 group-focus:opacity-30 transition-opacity duration-500 z-20 pointer-events-none" />
 
       {/* Image */}
-      <div className="max-h-[300px] overflow-hidden rounded-[12px] relative ">
+      <div className="max-h-[300px] overflow-hidden rounded-[12px] relative">
         <img
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 group-focus:scale-105"
           src={item?.image}
@@ -33,11 +42,18 @@ const CardOne = ({ item }) => {
         <div className="text-white space-y-6 absolute top-1/2 left-0 w-full bg-dark-slate border border-white/50 rounded-[10px] p-4 lg:p-6 scale-[1.02] opacity-0 invisible transition-all duration-500 transform translate-y-5 group-hover:opacity-100 group-focus:opacity-100 group-hover:visible group-focus:visible group-hover:translate-y-0 group-focus:translate-y-0 z-40">
           <div className="flex gap-1">
             <Rating
-              readonly
-              initialRating={rating}
-              fullSymbol={<AiFillStar className="text-xl text-primary" />}
-              emptySymbol={<AiOutlineStar className="text-xl text-gray-600 z-40" />}
-              fractions={2}
+              value={rating}
+              readOnly
+              items={5}
+              halfFillMode="svg"  // This enables decimal ratings
+              style={{ maxWidth: 120 }}
+              itemStyles={{
+                itemShapes: Star,
+                activeFillColor: '#8A7421', // Gold color for filled stars
+                inactiveFillColor: '#CCCCCC', // Gray color for empty stars
+                activeStrokeColor: '#FFD700',
+                inactiveStrokeColor: '#CCCCCC',
+              }}
             />
           </div>
 
