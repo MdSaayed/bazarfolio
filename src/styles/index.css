@@ -84,5 +84,23 @@
     background-clip: text;
     color: transparent;
   }
+
   
- 
+
+  /* Bullet */
+  .bullet {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px; /* space between bullet and text */
+  }
+  
+  .bullet::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 9999px;
+    background-color: #fff;
+  }
+  
+  

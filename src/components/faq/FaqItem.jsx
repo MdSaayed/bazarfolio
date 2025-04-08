@@ -8,7 +8,7 @@ const FaqItem = ({ question, answer, index, openIndex, toggleFAQ }) => {
     return (
         <div
             onClick={() => toggleFAQ(index)}
-            className={`faq-item w-full rounded-[10px] border border-dark-gray px-8 py-6 transition-colors duration-300 cursor-pointer`}
+            className={`faq-item w-full rounded-[10px] border border-dark-gray px-5 py-4 md:px-8 md:py-6 transition-colors duration-300 cursor-pointer`}
         >
             <button
                 className="flex w-full items-center justify-between text-left focus:outline-none cursor-pointer"

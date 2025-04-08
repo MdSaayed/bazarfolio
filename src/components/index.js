@@ -11,3 +11,4 @@ export { default as Stats } from  './stats/Stats';
 export { default as ServicesOne } from  './services/ServicesOne';
 export { default as Works } from  './works/Works';
 export { default as Faq } from  './faq/Faq';
+export { default as TestimonialsOne } from  './testimonials/TestimonialsOne';
