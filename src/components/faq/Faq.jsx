@@ -1,6 +1,7 @@
 import React, { useState  } from 'react';
 import FaqItem from './FaqItem';
 import {Subtitle, Title} from "../../components"
+import faqs_data from "../../data/faqs-data.js"
 
 // Faq Component
 const Faq = () => {
@@ -14,29 +15,7 @@ const Faq = () => {
     };
  
 
-    const faqs =[
-            {
-                question: 'What services do you offer?',
-                answer: 'We specialize in UI/UX design, web development, branding, and content creation to help businesses grow.'
-            },
-            {
-                question: 'Can I customize the templates you provide?',
-                answer: 'We specialize in UI/UX design, web development, branding, and content creation to help businesses grow.'
-            },
-            {
-                question: 'Do you offer ongoing support after project completion?',
-                answer: 'We specialize in UI/UX design, web development, branding, and content creation to help businesses grow.'
-            },
-            {
-                question: 'How long does it take to complete a project?',
-                answer: 'We specialize in UI/UX design, web development, branding, and content creation to help businesses grow.'
-            },
-            {
-                question: 'How can I contact you for a project?',
-                answer: 'We specialize in UI/UX design, web development, branding, and content creation to help businesses grow.'
-            }
-        ] 
-
+  
     return (
         <section>
             <div className="container">
@@ -51,7 +30,7 @@ const Faq = () => {
 
                     {/* Faq List Grid */}
                     <div className="faqs space-y-8 col-span-2">
-                        {faqs?.map((faq, index) => {
+                        {faqs_data?.map((faq, index) => {
                             const { question, answer } = faq;
                             return (
                                 <FaqItem

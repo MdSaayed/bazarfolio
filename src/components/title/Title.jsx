@@ -9,7 +9,7 @@ const Title = ({ text, variant = 'white', styleClassName = '' }) => {
       variantClass = 'text-white';
       break;
     case 'black':
-      variantClass = 'text-black';
+      variantClass = 'text-blue-gray';
       break;
     case 'gradient':
       variantClass = 'gradient-text';

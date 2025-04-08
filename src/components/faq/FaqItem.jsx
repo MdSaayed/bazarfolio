@@ -33,9 +33,9 @@ const FaqItem = ({ question, answer, index, openIndex, toggleFAQ }) => {
                 initial={{ height: 0, opacity: 0 }}
                 animate={isOpen ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="overflow-hidden pr-4 md:pr-10 lg:pr-12"
+                className="overflow-hidden"
             >
-                <div className="mt-4 text-dark-gray text-base font-normal leading-normal max-w-[600px]">
+                <div className="mt-4 text-dark-gray text-base font-normal leading-normal">
                     <p>{answer}</p>
                 </div>
             </motion.div>
