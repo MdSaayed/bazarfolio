@@ -13,7 +13,7 @@ const ServicesOne = () => {
                 <Subtitle text='Our Services' textColor='white'/>
 
                 {/* Title */}
-                <Title text='Exceptional Services – Crafting Innovative Solutions for Your Success.' styleClass='gradient-text max-w-[800px] text-3xl' textColor='transparent' />
+                <Title text='Exceptional Services – Crafting Innovative Solutions for Your Success.' styleClassName='gradient-text max-w-[800px] text-3xl' textColor='transparent' />
 
                 {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20"> 

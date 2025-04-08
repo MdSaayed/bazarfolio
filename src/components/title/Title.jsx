@@ -1,9 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Title = ({ text, styleClass = 'text-white',textColor='white'}) => {
+const Title = ({ text, variant = 'white', styleClassName = '' }) => {
+  let variantClass = '';
+
+  switch (variant) {
+    case 'white':
+      variantClass = 'text-white';
+      break;
+    case 'black':
+      variantClass = 'text-black';
+      break;
+    case 'gradient':
+      variantClass = 'gradient-text';
+      break;
+    default:
+      variantClass = 'text-white';
+  }
+
   return (
-    <h2 className={`text-[2rem] font-semibold mt-4 ${styleClass} text-${textColor}`}>
+    <h2 className={`text-[2rem] font-semibold leading-primary ${variantClass} ${styleClassName}`}>
       {text}
     </h2>
   );
@@ -11,7 +27,8 @@ const Title = ({ text, styleClass = 'text-white',textColor='white'}) => {
 
 Title.propTypes = {
   text: PropTypes.string.isRequired,
-  styleClass: PropTypes.string,
+  variant: PropTypes.oneOf(['white', 'black', 'gradient']),
+  styleClassName: PropTypes.string,
 };
 
 export default Title;

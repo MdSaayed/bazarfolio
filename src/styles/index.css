@@ -9,8 +9,9 @@
 /* Color customization */
 @theme{
   --color-blue-gray:#0E0F11;
-  --color-graphite:#18191B;
   --color-dark-slate: #111214;
+  --color-dark-gray: #3E3E3E;
+  --color-graphite:#18191B;
   --color-slate-gray:#626262;
   --color-primary:#8A7421;
   --color-lavender-blue :#8B74F5;

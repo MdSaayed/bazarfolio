@@ -5,9 +5,8 @@ const cards = [
   {
     title: "E-Commerce App UI",
     type: "UI/UX Design",
-    time: "5min",
+    time: "6min",
     image: "/assets/images/work-1.png",
-    big: true,
   },
   {
     title: "Developer Social Platform",
@@ -26,20 +25,20 @@ const cards = [
     type: "UI/UX Design",
     time: "5min",
     image: "/assets/images/work-4.png",
-    big: true,
   },
 ];
 
 const Works = () => {
   return (
-    <section className=' bg-blue-gray py-10 relative'>
+    <section className=' bg-blue-gray relative'>
       <div className="container">
         {/* Header */}
         <div className='flex flex-wrap justify-between items-start gap-y-8 gap-x-16'>
-          <Subtitle text='Our Works' textColor='white' styleClass='z-20' />
+          <Subtitle text='Our Works' textColor='white' styleclassName='z-20' />
           <Title
             text='Creative Excellence Turning Ideas into Stunning Digital Experiences.'
-            styleClass='gradient-text text-3xl max-w-[792px] !-mt-4 z-20'
+            variant='gradient'
+            styleClassName='max-w-[792px] mt-0 z-20'
           />
         </div>
 
@@ -61,7 +60,7 @@ const Works = () => {
 
                 {/* Overlay Text */}
                 <div className="w-full mt-6 text-white opacity-100 group-hover:opacity-100 transition">
-                    <div class="flex justify-between items-center">
+                    <div className="flex justify-between items-center">
                     <p className="text-base leading-normal">{card.type}</p>
                     <span className="text-base leading-normal block">{card.time}</span>
                     </div>
