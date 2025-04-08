@@ -32,42 +32,47 @@ const cards = [
 
 const Works = () => {
   return (
-    <section className=' bg-blue-gray3 py-16'>
+    <section className=' bg-blue-gray py-10 relative'>
       <div className="container">
         {/* Header */}
         <div className='flex flex-wrap justify-between items-start gap-y-8 gap-x-16'>
-          <Subtitle text='Our Works' textColor='white' />
+          <Subtitle text='Our Works' textColor='white' styleClass='z-20' />
           <Title
             text='Creative Excellence Turning Ideas into Stunning Digital Experiences.'
-            styleClass='gradient-text text-3xl max-w-[792px] !-mt-4'
+            styleClass='gradient-text text-3xl max-w-[792px] !-mt-4 z-20'
           />
         </div>
 
         {/* Grid layout */}
-        <div className="sm:-mx-6 md:-mx-12 columns-1 sm:columns-2 space-12 mt-20 [column-fill:_balance]">
-            {cards.map((card, index) => (
-                <div
-                key={index}
-                className="break-inside-avoid overflow-hidden rounded-xl relative group mb-12"
-                >
-                    {/* Image */}
-                    <div className='rounded-[20px] overflow-hidden'>
-                        <img
-                        src={card.image}
-                        alt={card.title}
-                        className="w-full h-auto object-cover"
-                        />
-                    </div>
+        <div className="columns-1 sm:columns-2 mt-20 gap-6 lg:gap-12">
+        {cards.map((card, index) => (
+            <div
+            key={index}
+            className="break-inside-avoid overflow-hidden rounded-xl relative group mb-12 z-20"
+            >
+                {/* Image */}
+                <div className='rounded-[20px] overflow-hidden'>
+                    <img
+                    src={card.image}
+                    alt={card.title}
+                    className="w-full h-auto object-cover"
+                    />
+                </div>
 
-                    {/* Overlay Text */}
-                    <div className="w-full mt-6 text-black opacity-100 group-hover:opacity-100 transition">
-                        <p className="text-sm">{card.type}</p>
-                        <h3 className="font-semibold text-lg">{card.title}</h3>
-                        <span className="text-xs mt-1 block">{card.time}</span>
+                {/* Overlay Text */}
+                <div className="w-full mt-6 text-white opacity-100 group-hover:opacity-100 transition">
+                    <div class="flex justify-between items-center">
+                    <p className="text-base leading-normal">{card.type}</p>
+                    <span className="text-base leading-normal block">{card.time}</span>
                     </div>
-                    </div>
-                ))}
-            </div>
+                    <h3 className="font-semibold leading-[1.2] text-lg mt-4">{card.title}</h3>
+                </div>
+                </div>
+            ))}
+        </div>
+
+        {/* Bg */}
+        <div className="bg-lavender-blue h-96 w-96 rounded-full absolute top-0 left-1/2 -translate-x-1/2 z-10 [filter:blur(400px)]"></div> 
       </div>
     </section>
   );
