@@ -13,3 +13,4 @@ export { default as Works } from  './works/Works';
 export { default as Faq } from  './faq/Faq';
 export { default as TestimonialsOne } from  './testimonials/TestimonialsOne';
 export { default as BrandsOne } from  './brands/BrandsOne';
+export { default as ContactOne } from  './contact/ContactOne';

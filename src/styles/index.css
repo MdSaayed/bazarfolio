@@ -52,11 +52,19 @@
     @apply px-0;
   }
 
+  .padding-b-0{
+    @apply pb-0;
+  }
+
 
 
   /* Body */
   body{
     font-family: "Poppins", sans-serif;
+  }
+
+  html{
+    scroll-behavior: smooth;
   }
 
 

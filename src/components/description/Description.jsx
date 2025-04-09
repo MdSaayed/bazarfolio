@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Description = ({ text = 'Add Your Description', textColor = 'text-dark-slate', styleClass = '', maxWidth = '' }) => {
+const Description = ({ text = 'Add Your Description', textColor = 'text-dark-slate', styleClassName = '', maxWidth = '' }) => {
   return (
-    <p className={`text-base font-normal leading-normal tracking-desc ${styleClass} ${textColor} ${maxWidth}`}>
+    <p className={`text-base font-normal leading-normal tracking-desc ${styleClassName} ${textColor} ${maxWidth}`}>
       {text}
     </p>
   );
@@ -12,7 +12,7 @@ const Description = ({ text = 'Add Your Description', textColor = 'text-dark-sla
 Description.propTypes = {
   text: PropTypes.string,
   textColor: PropTypes.string,
-  styleClass: PropTypes.string,
+  styleClassName: PropTypes.string,
   maxWidth: PropTypes.string,
 };
 
