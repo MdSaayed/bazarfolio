@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderOne from '../layouts/headers/HeaderOne';
 import FooterOne from '../layouts/footers/FooterOne';
-import { AboutOne, Faq, HeroOne, ServicesOne, TestimonialsOne, Works } from '../components';
+import { AboutOne, BrandsOne, Faq, HeroOne, ServicesOne, TestimonialsOne, Works } from '../components';
 import BlogsOne from '../components/blogs/BlogsOne';
 
 const HomeOne = () => {
@@ -30,6 +30,9 @@ const HomeOne = () => {
 
             {/* Blogs */}
             <BlogsOne />
+
+            {/* Brands */}
+            <BrandsOne />
 
             {/* Footer */}
             <FooterOne />

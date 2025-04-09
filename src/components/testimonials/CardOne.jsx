@@ -39,7 +39,7 @@ const CardOne = ({ item }) => {
 
       {/* Review Section - appears on hover and focus */}
       {item?.feedback && (
-        <div className="text-white space-y-6 absolute top-1/2 left-0 w-full bg-dark-slate border border-white/50 rounded-[10px] p-4 lg:p-6 scale-[1.02] opacity-0 invisible transition-all duration-500 transform translate-y-5 group-hover:opacity-100 group-focus:opacity-100 group-hover:visible group-focus:visible group-hover:translate-y-0 group-focus:translate-y-0 z-40">
+        <div className="text-white space-y-6 absolute top-1/3 left-0 w-full bg-dark-slate border border-white/50 rounded-[10px] p-4 lg:p-6 scale-[1.02] opacity-0 invisible transition-all duration-800 transform -translate-y-20 group-hover:opacity-100 group-focus:opacity-100 group-hover:visible group-focus:visible group-hover:translate-y-0 group-focus:translate-y-0 z-40">
           <div className="flex gap-1">
             <Rating
               value={rating}
