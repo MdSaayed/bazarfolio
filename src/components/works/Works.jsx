@@ -30,7 +30,7 @@ const cards = [
 
 const Works = () => {
   return (
-    <section className=' bg-blue-gray relative'>
+    <section id='works' className=' bg-blue-gray relative'>
       <div className="container">
         {/* Header */}
         <div className='flex flex-wrap justify-between items-start gap-y-8 gap-x-16'>

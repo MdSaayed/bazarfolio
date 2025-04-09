@@ -5,7 +5,7 @@ import CardOne from './CardOne';
 
 const BlogsOne = () => {
   return (
-    <section className="py-16 bg-white">
+    <section id='blog' className="py-16 bg-white">
       <div className="container mx-auto px-4">
         {/* Subtile */}
         <Subtitle text='Our Blog' />

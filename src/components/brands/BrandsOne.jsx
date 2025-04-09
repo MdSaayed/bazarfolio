@@ -14,7 +14,7 @@ const BrandsOne = () => {
     ]
 
     return (
-        <section className='bg-[url("/assets/images/brand-bg.png")] bg-cover bg-dark-slate'>
+        <section id='brand' className='bg-[url("/assets/images/brand-bg.png")] bg-cover bg-dark-slate'>
             <div className="container padding-y-20">
                 {/* Subtitle */}
                 <Subtitle text='Our Clients & Partners' variant='white' />

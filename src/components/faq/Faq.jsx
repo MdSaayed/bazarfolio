@@ -17,7 +17,7 @@ const Faq = () => {
 
   
     return (
-        <section>
+        <section id='faq'>
             <div className="container">
                 <div className="grid grid-cols-1 lg:grid-cols-3 justify-between gap-12 xl:gap-20">
                    <div>

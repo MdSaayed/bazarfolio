@@ -7,7 +7,7 @@ const ServicesOne = () => {
 
 
     return (
-        <section className='bg-blue-gray'>
+        <section  id='services' className='bg-blue-gray'>
             <div className="container">
                 {/* Subtitle */}
                 <Subtitle text='Our Services' variant='white'/>

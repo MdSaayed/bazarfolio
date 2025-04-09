@@ -6,7 +6,7 @@ import  Aboutimage from "/assets/images/about-1.png";
 
 const AboutOne = () => {
     return (
-        <section>
+        <section id='about'>
             <div className="container py-32">
                 {/* Subtitle */}
                 <Subtitle text={'Our About'} /> 
