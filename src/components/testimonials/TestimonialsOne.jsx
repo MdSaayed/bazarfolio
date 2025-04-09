@@ -9,7 +9,7 @@ const TestimonialsOne = () => {
             <div className="container">
                 {/* Header */}
                 <div className='flex flex-wrap justify-between items-start gap-y-8 gap-x-16'>
-                    <Subtitle text='Testimonials' textColor='white' styleclassName='z-20' />
+                    <Subtitle text='Testimonials' variant='white' styleClassName='z-20' />
                     <Title
                     text="We've empowered countless clients to reach their goals and their feedback is our greatest reward"
                     variant='gradient'

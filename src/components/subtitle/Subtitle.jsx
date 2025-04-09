@@ -16,7 +16,7 @@ const Subtitle = ({ text = 'Add Your Subtitle', styleClassName = '', variant = '
   const { text: textColor, dot: dotBg } = variantStyles[variant] || variantStyles.black;
 
   return (
-    <p className={`subtitle mb-4 flex items-center gap-1 ${textColor} ${styleClassName}`}>
+    <p className={`subtitle mb-4 flex items-center gap-1 ${textColor} ${styleClassName}`}> 
       <span className={`inline-block h-2 w-2 rounded-full ${dotBg}`}></span>
       {text}
     </p>

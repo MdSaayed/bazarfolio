@@ -9,7 +9,7 @@ const AboutOne = () => {
         <section>
             <div className="container py-32">
                 {/* Subtitle */}
-                <Subtitle text={'Our About'} />
+                <Subtitle text={'Our About'} /> 
 
                 {/* Title */}
                 <h2 className="text-[2rem] font-semibold mt-4 text-slate-gray max-w-[916px] leading-[1.6]">Our digital strategies and design expertise focus on Crafting Unique & Impactful <img className='inline-block' src={PhoneOnText} /> Digital Experiences with Creativity <img className='inline-block' src={Sleek} /> and Precision. promoting social economy businesses, cutting-edge</h2>

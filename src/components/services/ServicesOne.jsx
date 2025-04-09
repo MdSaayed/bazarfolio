@@ -10,10 +10,10 @@ const ServicesOne = () => {
         <section className='bg-blue-gray'>
             <div className="container">
                 {/* Subtitle */}
-                <Subtitle text='Our Services' textColor='white'/>
+                <Subtitle text='Our Services' variant='white'/>
 
                 {/* Title */}
-                <Title text='Exceptional Services – Crafting Innovative Solutions for Your Success.' styleClassName='gradient-text max-w-[800px] text-3xl' textColor='transparent' />
+                <Title text='Exceptional Services – Crafting Innovative Solutions for Your Success.' styleClassName='max-w-[800px] text-3xl' variant='gradient' />
 
                 {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20"> 
