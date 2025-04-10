@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
 // Custom hook to handle sending emails using EmailJS
