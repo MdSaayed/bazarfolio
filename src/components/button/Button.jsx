@@ -1,11 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Button = ({ text, icon = true, to = "/" }) => {
+  const location = useLocation();
+  const isHashLink = to.startsWith("#");
+
+  const handleClick = (e) => {
+    if (isHashLink) {
+      e.preventDefault();
+      const el = document.querySelector(to);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
   return (
     <Link
-      to={to}
+      to={isHashLink ? location.pathname : to}
+      onClick={handleClick}
       className="btn-primary"
     >
       <span>{text}</span>

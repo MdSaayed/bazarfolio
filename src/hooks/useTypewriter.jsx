@@ -5,7 +5,7 @@ const useTypewriter = (words, options = {}) => {
   const {
     loop = true,
     typeSpeed = 150,  // Slower default typing speed
-    deleteSpeed = 50,
+    deleteSpeed = 100,
     delaySpeed = 1500,  // Longer pause between words
     cursor = true,
     cursorStyle = '',
@@ -40,7 +40,7 @@ useEffect(() => {
         
         // When word is complete
         if (text === currentWord) {
-          timerRef.current = setTimeout(() => setIsDeleting(true), 1000); // 1 second delay here
+          timerRef.current = setTimeout(() => setIsDeleting(true), 2000); 
           return;
         }
       } else {

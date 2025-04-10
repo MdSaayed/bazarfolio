@@ -15,7 +15,7 @@ const DesktopMenu = ({ setMenuOpen, menuItems }) => {
           <Link to="/">LOGO</Link>
         </div>
 
-        <nav className='hidden lg:block border border-white rounded-4xl py-2 px-8'>
+        <nav className='hidden lg:block border border-white/50 rounded-4xl py-2 px-8'>
           <ul className='flex items-center gap-10'>
             {menuItems.map((item, index) => (
               <li key={index}>
@@ -34,7 +34,7 @@ const DesktopMenu = ({ setMenuOpen, menuItems }) => {
       </div>
 
       <div className='items-center hidden xl:flex'>
-        <Button text={'Start a Project'} />
+        <Button text={'Start a Project'} to='#contact' />
       </div>
 
       <AlignJustify

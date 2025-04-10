@@ -3,7 +3,6 @@ import { DesktopMenu, ResponsiveMenu } from '../../components';
 
 const HeaderOne = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [isSticky, setSticky] = useState(false);
 
   const menuItems = [
     { name: "Home", path: "#hero" },
@@ -13,18 +12,10 @@ const HeaderOne = () => {
     { name: "Blog", path: "#blog" },
     { name: "Contact", path: "#contact" },
   ];
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setSticky(window.scrollY > 10); // adjust if needed
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+ 
 
   return (
-    <header className={`sticky top-0 z-40 transition-colors duration-300 ${isSticky ? 'bg-blue-gray/90 backdrop-blur-md' : 'bg-blue-gray'}`}>
+    <header className={`bg-blue-gray z-40 `}>
       <div className="container padding-y-0">
         <DesktopMenu menuItems={menuItems} setMenuOpen={setMenuOpen} />
         <ResponsiveMenu menuItems={menuItems} isOpen={isMenuOpen} onClose={() => setMenuOpen(false)} />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Subtitle, Title } from "../../components";
+import CardOne from './CardOne';
 
 const cards = [
   {
@@ -43,35 +44,14 @@ const Works = () => {
         </div>
 
         {/* Grid layout */}
-        <div className="columns-1 sm:columns-2 mt-20 gap-6 lg:gap-12">
-        {cards.map((card, index) => (
-            <div
-            key={index}
-            className="break-inside-avoid overflow-hidden rounded-xl relative group mb-12 z-20"
-            >
-                {/* Image */}
-                <div className='rounded-[20px] overflow-hidden'>
-                    <img
-                    src={card.image}
-                    alt={card.title}
-                    className="w-full h-auto object-cover"
-                    />
-                </div>
-
-                {/* Overlay Text */}
-                <div className="w-full mt-6 text-white opacity-100 group-hover:opacity-100 transition">
-                    <div className="flex justify-between items-center">
-                    <p className="text-base leading-normal">{card.type}</p>
-                    <span className="text-base leading-normal block">{card.time}</span>
-                    </div>
-                    <h3 className="font-semibold leading-[1.2] text-lg mt-4">{card.title}</h3>
-                </div>
-                </div>
+        <div className="columns-1 sm:columns-2 gap-6 lg:gap-12 mt-10 lg:mt-20">
+        {cards.map((work, index) => (
+            <CardOne key={index} work={work} />
             ))}
         </div>
 
         {/* Bg */}
-        <div className="bg-lavender-blue h-96 w-96 rounded-full absolute top-0 left-1/2 -translate-x-1/2 z-10 [filter:blur(400px)]"></div> 
+        <div className="bg-lavender-blue h-20 w-20 sm:h-96 sm:w-96 rounded-full absolute top-0 left-1/2 -translate-x-1/2 z-10 [filter:blur(80px)] sm:[filter:blur(400px)]"></div>
       </div>
     </section>
   );

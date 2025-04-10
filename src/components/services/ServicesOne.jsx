@@ -16,7 +16,7 @@ const ServicesOne = () => {
                 <Title text='Exceptional Services – Crafting Innovative Solutions for Your Success.' styleClassName='max-w-[800px] text-3xl' variant='gradient' />
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20"> 
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  mt-10 lg:mt-20"> 
                     {services_one?.map((service) => (
                         <CardOne key={service?.id} service={service} />
                     ))}

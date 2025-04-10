@@ -61,7 +61,7 @@ const ScrollToTop = () => {
         </svg>
 
         {/* Arrow Icon */}
-        <div className="relative z-10">
+        <div className="relative -rotate-90 z-10">
           <svg width="12" height="20" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M1 15L8 8L1 1"

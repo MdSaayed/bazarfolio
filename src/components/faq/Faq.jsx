@@ -6,7 +6,7 @@ import faqs_data from "../../data/faqs-data.js"
 // Faq Component
 const Faq = () => {
     // State For Faq Data
-    const [openIndex, setOpenIndex] = useState(null); // State For Opened Faq
+    const [openIndex, setOpenIndex] = useState(0); 
  
 
     // Toggle Faq Item
@@ -19,7 +19,7 @@ const Faq = () => {
     return (
         <section id='faq'>
             <div className="container">
-                <div className="grid grid-cols-1 lg:grid-cols-3 justify-between gap-12 xl:gap-20">
+                <div className="grid grid-cols-1 lg:grid-cols-3 justify-between gap-10 xl:gap-20">
                    <div>
                      {/* Subtitle */}
                      <Subtitle text='Our Faq' />

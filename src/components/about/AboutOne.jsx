@@ -7,12 +7,12 @@ import  Aboutimage from "/assets/images/about-1.png";
 const AboutOne = () => {
     return (
         <section id='about'>
-            <div className="container py-32">
+            <div className="container overflow-hidden py-32">
                 {/* Subtitle */}
                 <Subtitle text={'Our About'} /> 
 
                 {/* Title */}
-                <h2 className="text-[2rem] font-semibold mt-4 text-slate-gray max-w-[916px] leading-[1.6]">Our digital strategies and design expertise focus on Crafting Unique & Impactful <img className='inline-block' src={PhoneOnText} /> Digital Experiences with Creativity <img className='inline-block' src={Sleek} /> and Precision. promoting social economy businesses, cutting-edge</h2>
+                <h2 className="text-base lg:text-[2rem] font-semibold mt-4 text-slate-gray max-w-[916px] leading-[1.6]">Our digital strategies and design expertise focus on Crafting Unique & Impactful <img className='hidden lg:inline-block' src={PhoneOnText} /> Digital Experiences with Creativity <img className='hidden lg:inline-block' src={Sleek} /> and Precision. promoting social economy businesses, cutting-edge</h2>
 
                 <div className='flex flex-col justify-center items-end mt-10 mr-10'>
                     <div className='space-y-12'>

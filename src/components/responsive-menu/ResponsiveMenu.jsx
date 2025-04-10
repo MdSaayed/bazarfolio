@@ -48,7 +48,7 @@ const ResponsiveMenu = ({ isOpen, onClose, menuItems }) => {
 
   return (
     <div
-      className={`fixed inset-0 z-50 bg-black text-white transition-transform duration-300 ${
+      className={`fixed inset-0 z-50 bg-blue-gray text-white overflow-y-scroll transition-transform duration-300 ${
         isMenuOpen ? "translate-x-0" : "translate-x-full"
       }`}
     >
@@ -64,15 +64,18 @@ const ResponsiveMenu = ({ isOpen, onClose, menuItems }) => {
 
       <div className="flex flex-col items-center justify-center h-full space-y-6">
         {menuItems.map((item, index) => (
-          <NavLink
+          <a
+            onClick={() => {
+              setIsMenuOpen(false);
+              onClose();
+            }}
+            href={item?.path}
             key={index}
-            className={({ isActive }) =>
-              `text-lg hover:underline ${isActive ? "font-bold" : "font-normal"}`
-            }
+            className="text-lg"
             to={item.path}
           >
-            {item.name}
-          </NavLink>
+            {item.name} 
+          </a>
         ))}
         <Link
           to="/buy"

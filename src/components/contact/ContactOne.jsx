@@ -5,8 +5,8 @@ import {Description, Subtitle} from "../../components"
 const ContactOne = () => {
   return (
     <section id="contact">
-      <div className="container">
-       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+      <div className="container bg-[url('/assets/images/contact-sec-bg.png')] bg-left-top bg-no-repeat">
+       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             {/* Left Content */}
             <div>
                 {/* Subtitle */}
@@ -21,19 +21,19 @@ const ContactOne = () => {
             {/* Description */}
             <Description text="I help brands stand out through strategic design, clean visuals, and memorable digital experiences." textColor="text-dark-gray" styleClassName="tracking-desc" />
 
-            <div className="grid sm:grid-cols-2 gap-6 text-sm mt-20">
+            <div className="grid sm:grid-cols-2 gap-10 md:gap-6 xl:gap-12 text-sm mt-20">
                 <div>
-                <h4 className="font-medium text-xl leading-primary text-blue-gray mb-8">Address</h4>
-                <p className="text-dark-gray leading-normal tracking-desc">
-                    2972 Westheimer Rd. Santa Ana,<br /> Illinois 85486
-                </p>
-                <p className="text-blue-gray text-xl font-medium mt-6">
-                    +23 (603) 555-0123
-                </p>
+                    <h4 className="font-medium text-xl leading-primary text-blue-gray mb-8">Address</h4>
+                    <p className="text-dark-gray leading-normal tracking-desc">
+                        2972 Westheimer Rd. Santa Ana,<br /> Illinois 85486
+                    </p>
+                    <p className="text-blue-gray text-xl font-medium mt-6">
+                        +23 (603) 555-0123
+                    </p>
                 </div>
                 <div>
-                <h4 className="font-medium text-xl leading-primary text-blue-gray mb-8">Email</h4>
-                <p className="text-dark-gray leading-normal tracking-desc">support@uibazar.com</p>
+                    <h4 className="font-medium text-xl leading-primary text-blue-gray mb-8">Email</h4>
+                    <p className="text-dark-gray leading-normal tracking-desc">support@uibazar.com</p>
                 </div>
             </div>
             </div>
@@ -64,7 +64,7 @@ const ContactOne = () => {
                 placeholder="Message"
                 className="border-b border-blue-gray p-2 placeholder:text-base placeholder:text-dark-gray placeholder:leading-primary pl-0 outline-none col-span-2 resize-none"
                 />
-            <button
+                <button
                     type="submit"
                     className="bg-blue-gray w-20 h-20 rounded-full text-white text-sm font-medium leading-primary p-2 mt-2 col-span-2
                                 transition-transform duration-300 transform hover:scale-95 hover:shadow-lg cursor-pointer"
