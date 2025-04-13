@@ -83,7 +83,7 @@ const ResponsiveMenu = ({ isOpen, onClose, menuItems }) => {
             setIsMenuOpen(false);
             onClose();
           }}
-          className="mt-4 border border-white px-6 py-2 hover:bg-white hover:text-black transition"
+          className="mt-4 border rounded-4xl border-white px-6 py-2 hover:bg-white hover:text-black transition"
         >
           BUY NOW
         </Link>

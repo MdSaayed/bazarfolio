@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useScrollSpy from '../../hooks/useScrollSpy';
 
 const FooterOne = () => {
   const menuItems = [
@@ -11,9 +10,6 @@ const FooterOne = () => {
     { name: 'Blog', path: '#blog' },
     { name: 'Contact', path: '#contact' },
   ];
-
-  const sectionIds = menuItems.map((item) => item?.path.replace('#', ''));
-  const activeSection = useScrollSpy(sectionIds, 100);
 
   return (
     <footer className="bg-[url('/assets/images/footer-bg-1.png')] bg-cover bg-blue-gray pb-16">
@@ -73,11 +69,7 @@ const FooterOne = () => {
                   <a
                     key={idx}
                     href={item?.path}
-                    className={`block hover:text-primary transition-colors duration-200 ${
-                      activeSection === item?.path.replace('#', '')
-                        ? 'text-primary'
-                        : ''
-                    }`}
+                    className={`block hover:text-primary transition-colors duration-200`}
                   >
                     {item.name}
                   </a>
@@ -110,7 +102,7 @@ const FooterOne = () => {
           </div>
 
           {/* Footer bottom */}
-          <div className="flex flex-col md:flex-row justify-between items-center mt-12 pt-8 border-t border-white/50 gap-6">
+          <div className="flex flex-col md:flex-row justify-between items-center mt-12 pt-4 border-t border-white/50 gap-6">
             <div className='flex items-center gap-4'>
                 <Link to='https://www.facebook.com' target="_blank" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 28 28" fill="none">

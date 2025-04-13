@@ -27,7 +27,7 @@ const Title = ({ text, variant = 'white', styleClassName = '' }) => {
 
 Title.propTypes = {
   text: PropTypes.string.isRequired,
-  variant: PropTypes.oneOf(['white', 'black', 'gradient']),
+  variant: PropTypes.oneOf(['white', 'black', 'gradient']), 
   styleClassName: PropTypes.string,
 };
 

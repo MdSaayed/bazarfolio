@@ -1,0 +1,192 @@
+/**!
+
+    Template Name: 'Relik-Admin Dashboard'
+    Template URI:
+    Description:
+    Author: 
+    Author URI: 
+    Version: 1.0.0
+    -------------------------------------------------
+     1.0 base css
+     1.1 layout css
+     1.2 components css
+     1.3 pages css
+     1.4 themes css
+
+**/
+
+
+/* Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Color customization */
+@theme{
+    --color-blue-gray:#0E0F11;
+    --color-dark-slate: #111214;
+    --color-dark-gray: #3E3E3E;
+    --color-graphite:#18191B;
+    --color-slate-gray:#626262;
+    --color-primary:#8A7421;
+    --color-lavender-blue :#8B74F5;
+  
+    --tracking-desc:0.16px;
+    --leading-primary:1.2;
+  }
+
+
+
+  /* Body */
+  body{
+    font-family: "Poppins", sans-serif;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  
+/* title */
+.title-black{
+    color: var(--color-blue-gray);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.32px;
+    font-family: "Poppins", sans-serif;
+}
+
+.title-white{
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.32px;
+    font-family: "Poppins", sans-serif;
+}
+
+.title-gradient{
+    font-size: 2rem;
+    line-height: 1.2;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -0.32px;
+    font-weight: 600;
+    background: linear-gradient(91deg, #FFF 0.35%, #999 61.17%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+/* hero title */
+.hero-title{
+    color:var(--color-white);
+    font-size: 72px;
+    font-weight: 600;
+    height: var(--leading-primary);
+    white-space: nowrap;
+    margin-bottom: 1.5rem;
+    /* text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.2] md:whitespace-nowrap mb-6 */
+}
+
+
+
+  /* Subtitle style */
+  .subtitle-white,.subtitle-black {
+    display: flex;
+    padding-left: 15px;
+    position: relative;
+    align-items: center;
+    font-size: var(--text-xl);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle-white {
+    color: var(--color-white);
+  }
+
+  .subtitle-black {
+    color: var(--color-blue-gray);
+  }
+  
+  .subtitle-white span,  .subtitle-black span{
+    display: inline-block;
+    margin-right: 15px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+
+  .subtitle-black span {
+    color: var(--color-blue-gray);
+  }
+  
+  .subtitle-black span {
+    color: var(--color-white);
+  }
+  
+  .subtitle-black::before,.subtitle-white::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+
+  .subtitle-black::before{
+    background: var(--color-dark-gray);
+  }
+
+  .subtitle-white::before{
+    background: var(--color-white);
+  }
+  
+/*   
+  .gradient-text {
+    font-weight: 600;
+    background: linear-gradient(91deg, #FFF 0.35%, #999 61.17%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  } */
+
+
+  /* Text */
+  .text{
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.16px;
+  }
+  
+
+  /* Bullet */
+  .bullet {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px; /* space between bullet and text */
+  }
+  
+  .bullet::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 9999px;
+    background-color: #fff;
+  }
+  
+
+/* Typing blink */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+ 

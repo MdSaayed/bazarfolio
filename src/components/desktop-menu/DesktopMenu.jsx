@@ -16,7 +16,7 @@ const DesktopMenu = ({ setMenuOpen, menuItems }) => {
         </div>
 
         <nav className='hidden lg:block border border-white/50 rounded-4xl py-2 px-8'>
-          <ul className='flex items-center gap-10'>
+          <ul className='flex items-center gap-6'>
             {menuItems.map((item, index) => (
               <li key={index}>
                 <a
@@ -34,7 +34,22 @@ const DesktopMenu = ({ setMenuOpen, menuItems }) => {
       </div>
 
       <div className='items-center hidden xl:flex'>
-        <Button text={'Start a Project'} to='#contact' />
+        <a className="kb-btn-primary" href='#contact'>Start a Project
+          <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="16"
+              viewBox="0 0 20 16"
+              fill="none"
+              >
+              <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M19.9879 7C19.9919 7 19.996 7 20 7V9.0001H19.9582C15.1626 9.0198 12 12.4251 12 15.5H10C10 12.9999 11.3841 10.6065 13.6159 9.0001H0.5V7.0001H13.6161C11.3842 5.39368 10 3.00012 10 0.5H12C12 3.58118 15.1757 6.9943 19.9879 7Z"
+                  fill="white"
+              />
+              </svg>
+        </a>                                             
       </div>
 
       <AlignJustify

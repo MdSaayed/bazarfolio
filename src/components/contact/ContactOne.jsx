@@ -35,44 +35,35 @@ const ContactOne = () => {
     <section id="contact">
       <div className="container bg-[url('/assets/images/contact-sec-bg.png')] bg-left-top bg-no-repeat">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-          
-          {/* Left Content */}
           <div>
-            <Subtitle text="Contact Us" variant="black" styleClassName="text-dark-gray" />
-
+            <span className="subtitle-black text-dark-gray">Contact Us</span>
             <h2 className="text-blue-gray text-3xl sm:text-4xl max-w-lg font-semibold tracking-desc leading-primary mb-6">
               <span>Design that speaks.</span>
               <span className="font-normal"> Brands that connect.</span>
             </h2>
-
-            <Description
-              text="I help brands stand out through strategic design, clean visuals, and memorable digital experiences."
-              textColor="text-dark-gray"
-              styleClassName="tracking-desc"
-            />
+            <p className="text text-dark-gray tracking-desc">I help brands stand out through strategic design, clean visuals, and memorable digital experiences.</p>
 
             <div className="grid sm:grid-cols-2 gap-10 md:gap-6 xl:gap-12 text-[10px] mt-20">
               <div>
-                <h4 className="font-medium text-xl leading-primary text-blue-gray mb-8">Address</h4>
-                <p className="text-dark-gray leading-normal tracking-desc">
+                <h4 className="font-medium text-xl leading-primary text-blue-gray mb-4 lg:mb-8">Address</h4>
+                <p className="text-dark-gray text-lg lg:text-base leading-normal tracking-desc">
                   2972 Westheimer Rd. Santa Ana,<br /> Illinois 85486
                 </p>
-                <p className="text-blue-gray text-xl font-medium mt-6">
+                <p className="text-blue-gray text-xl font-medium mt-4 lg:mt-6">
                   +23 (603) 555-0123
                 </p>
               </div>
               <div>
-                <h4 className="font-medium text-xl leading-primary text-blue-gray mb-8">Email</h4>
-                <p className="text-dark-gray leading-normal tracking-desc">
+                <h4 className="font-medium text-xl leading-primary text-blue-gray mb-4 lg:mb-8">Email</h4>
+                <p className="text-dark-gray text-lg lg:text-base leading-normal tracking-desc">
                   support@uibazar.com
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Right Form */}
           <div>
-            <h3 className="text-blue-gray text-3xl sm:text-4xl font-semibold tracking-desc leading-primary mb-20">
+            <h3 className="text-blue-gray text-3xl sm:text-4xl font-semibold tracking-desc leading-primary mb-10 lg:mb-20">
               Send <span className="font-normal"> a Message</span>
             </h3>
 

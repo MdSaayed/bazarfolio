@@ -33,14 +33,9 @@ const Works = () => {
   return (
     <section id='works' className=' bg-blue-gray relative'>
       <div className="container">
-        {/* Header */}
         <div className='flex flex-wrap justify-between items-start gap-y-8 gap-x-16'>
-          <Subtitle text='Our Works' variant='white' styleClassName='z-20' />
-          <Title
-            text='Creative Excellence Turning Ideas into Stunning Digital Experiences.'
-            variant='gradient'
-            styleClassName='max-w-[792px] mt-0 z-20'
-          />
+          <span className='subtitle-white z-20'>Our Works</span>
+          <h2 className='title-gradient max-w-[792px] mt-0 z-20'>Creative Excellence Turning Ideas into Stunning Digital Experiences.</h2>
         </div>
 
         {/* Grid layout */}

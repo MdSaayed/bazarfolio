@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+    .container {
+      @apply px-5;
+    }
+  }
+  
+
+    /* Global Container Styles */
+.container {
+    @apply py-32 px-20 max-w-[1440px] mx-auto;
+  }
+  
+  @media (max-width: 1024px) {
+    .container {
+      @apply px-10;
+    }
+  }
+  
+
+      /* padding-y-0 */
+      .padding-y-0{
+        @apply py-0;
+      }
+      /* padding-y-0 */
+      .padding-y-20{
+        @apply py-20;
+      }
+    
+      /* padding-x-0 */
+      .padding-x-0{
+        @apply px-0;
+      }
+    
+      .padding-b-0{
+        @apply pb-0;
+      }
+  

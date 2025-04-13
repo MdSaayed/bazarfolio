@@ -2,7 +2,7 @@ import React from 'react';
 
 const CardOne = ({work}) => {
     return (
-        <div className="break-inside-avoid overflow-hidden rounded-xl relative group mb-12 z-20" >
+        <div className="break-inside-avoid relative group mb-12 z-20" >
             {/* Image */}
             {
                 work.image && (
