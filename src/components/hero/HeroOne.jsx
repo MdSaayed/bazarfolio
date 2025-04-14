@@ -10,7 +10,7 @@ const HeroOne = () => {
             <div className="container padding-y-20">
                 <div className="relative bg-dark-slate grid grid-cols-1 lg:grid-cols-2 items-center gap-20 md:p-8 lg:p-12 lg:pb-0 rounded-4xl overflow-hidden bg-[url('/assets/images/hero-bg.png')] bg-center bg-blend-overlay bg-cover">
                     <div className='text-white z-20 order-2 lg:order-1' data-aos="fade-up" data-aos-duration="500">
-                        <span className='text-xl font-semibold leading-primary mb-[10px]'>Hello, I'm Logan</span>
+                        <span className='hero-subtitle'>Hello, I'm Logan</span>
                         <h1 className='hero-title'>
                             <span>Web </span>
                             <span className="inline-flex items-baseline min-w-[180px]">

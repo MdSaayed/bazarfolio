@@ -11,3 +11,4 @@ export { default as TestimonialsOne } from  './testimonials/TestimonialsOne';
 export { default as BrandsOne } from  './brands/BrandsOne';
 export { default as ContactOne } from  './contact/ContactOne';
 export { default as ServiceScroll } from  './service-scroll/ServiceScroll';
+export { default as HeroTwo } from  './hero/HeroTwo';

@@ -1,10 +1,12 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"; 
 import Wrapper from "./layouts/Wrapper";
-import HomeOne from "./pages/HomeOne";
+import { HomeOne, HomeTwo } from "./pages";
+ 
 
 
 const router = createBrowserRouter([
 	{ path: "/", element: <HomeOne /> },
+	{ path: "/home-2", element: <HomeTwo /> },
 ]);
 
 

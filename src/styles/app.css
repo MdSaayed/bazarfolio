@@ -29,6 +29,7 @@
     --color-slate-gray:#626262;
     --color-primary:#AEFE3A;
     --color-lavender-blue :#8B74F5;
+    --color-dark-green:#171A17;
 
     --tracking-desc:0.16px;
     --leading-primary:1.2;
@@ -100,6 +101,21 @@
     }
   }
 
+  .hero-title2{
+    /* color: var(--color-white); */
+    font-size: 56px;
+    font-size: var(--text-5xl);
+    font-weight: 600;
+    line-height: var(--leading-primary); 
+    letter-spacing: -0.56px;
+  }
+
+  .hero-subtitle{
+    font-size: var(--text-xl);
+    font-weight: 600;
+    line-height: var(--leading-primary);
+    margin-bottom: 10px;
+  }
 
 
 
@@ -184,6 +200,21 @@
     background-color: #fff;
   }
   
+
+  /* Stats2 */
+  .stats2 h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: var(--leading-primary);
+    letter-spacing: -0.4px;
+  }
+  .stats2 p{
+    font-size: var(--text-base);
+    font-weight: 400;
+    line-height: var(--leading-primary);
+    letter-spacing: 0.16px;
+    padding-bottom: 10px;
+  }
 
   /* Typing blink */
   @keyframes blink {
