@@ -4,9 +4,9 @@ import { useState, useEffect, useRef } from 'react';
 const useTypewriter = (words, options = {}) => {
   const {
     loop = true,
-    typeSpeed = 150,  // Slower default typing speed
+    typeSpeed = 150, 
     deleteSpeed = 100,
-    delaySpeed = 1500,  // Longer pause between words
+    delaySpeed = 1500,
     cursor = true,
     cursorStyle = '',
     cursorColor = 'currentColor',
@@ -19,39 +19,32 @@ const useTypewriter = (words, options = {}) => {
   const [isDeleting, setIsDeleting] = useState(false);
   const timerRef = useRef(null);
 
-  // Calculate typing speed dynamically for smoother effect
   const getTypingSpeed = () => {
     const baseSpeed = isDeleting ? deleteSpeed : typeSpeed;
     const currentWord = words[currentIndex % words.length];
     const progress = text.length / currentWord.length;
     
-    // Slow down at start and end of typing
     return baseSpeed * (0.7 + Math.sin(progress * Math.PI) * 0.3);
   };
 
-// Inside your useTypewriter hook (just the relevant part)
 useEffect(() => {
     const typeCharacter = () => {
       const currentWord = words[currentIndex % words.length];
       
       if (!isDeleting) {
-        // Typing forward
         setText(currentWord.substring(0, text.length + 1));
         
-        // When word is complete
         if (text === currentWord) {
           timerRef.current = setTimeout(() => setIsDeleting(true), 2000); 
           return;
         }
       } else {
-        // Deleting backward
         setText(currentWord.substring(0, text.length - 1));
         
-        // When word is deleted
         if (text === '') {
           setIsDeleting(false);
           setCurrentIndex(loop ? currentIndex + 1 : currentIndex);
-          timerRef.current = setTimeout(typeCharacter, 500); // Short pause before next word
+          timerRef.current = setTimeout(typeCharacter, 500);
           return;
         }
       }
@@ -64,7 +57,6 @@ useEffect(() => {
     return () => clearTimeout(timerRef.current);
   }, [text, currentIndex, isDeleting, words, loop, delaySpeed]);
 
-  // Single cursor component
   const Cursor = () => (
     <span style={{
       display: 'inline-block',

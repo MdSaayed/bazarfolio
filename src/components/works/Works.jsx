@@ -1,5 +1,4 @@
 import React from 'react';
-import { Subtitle, Title } from "../../components";
 import CardOne from './CardOne';
 
 const cards = [

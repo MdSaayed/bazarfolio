@@ -1,5 +1,4 @@
 import React from 'react';
-import { Subtitle } from "../../components";
 import BrandLogo from './BrandLogo';
 
 const BrandsOne = () => {
@@ -17,7 +16,6 @@ const BrandsOne = () => {
             <div className="container padding-y-20">
                 <span className='subtitle-white'>Our Clients & Partners</span>
 
-                {/* Modified grid container */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 
                     justify-items-center gap-4 sm:gap-6 md:gap-8 mt-12 px-4 sm:px-0">
                     {logos?.map((logo, index) => (

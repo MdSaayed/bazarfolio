@@ -2,7 +2,7 @@
 .kb-btn-primary {
     background: var(--color-primary);
     font-size: 1.25rem;
-    color: #fff;
+    color: var(--color-blue-gray);
     font-weight: 500;
     display: inline-flex;
     border-radius: 32px;

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { FiMinus } from "react-icons/fi";
 import { RiInstagramFill } from "react-icons/ri";
@@ -7,24 +7,21 @@ import { TbBrandDribbbleFilled } from "react-icons/tb";
 import { AiOutlineTikTok } from "react-icons/ai";
 
 const ResponsiveMenu = ({ isOpen, onClose, menuItems }) => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024); // Breakpoint for mobile
-  const [isMenuOpen, setIsMenuOpen] = useState(isOpen); // Manage menu state locally
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024); 
+  const [isMenuOpen, setIsMenuOpen] = useState(isOpen); 
 
   useEffect(() => {
     const handleResize = () => {
       const isMobileNow = window.innerWidth < 1024;
       setIsMobile(isMobileNow);
-      // Close menu when transitioning from mobile to desktop
       if (!isMobileNow && isMenuOpen) {
         setIsMenuOpen(false);
-        onClose(); // Close the menu on desktop
+        onClose();
       }
     };
 
-    // Add resize event listener
     window.addEventListener("resize", handleResize);
 
-    // Cleanup on unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };

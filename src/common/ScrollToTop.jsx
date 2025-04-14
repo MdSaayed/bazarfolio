@@ -45,7 +45,6 @@ const ScrollToTop = () => {
           isActive ? 'opacity-100 scale-100' : 'opacity-0 scale-75 pointer-events-none'
         }`}
       >
-        {/* Progress Circle */}
         <svg
           className="absolute w-full h-full rotate-[-90deg]"
           viewBox="-1 -1 102 102"
@@ -60,7 +59,6 @@ const ScrollToTop = () => {
           />
         </svg>
 
-        {/* Arrow Icon */}
         <div className="relative -rotate-90 z-10">
           <svg width="12" height="20" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path

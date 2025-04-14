@@ -7,37 +7,16 @@ import BlogsOne from '../components/blogs/BlogsOne';
 const HomeOne = () => {
     return (
         <>
-            {/* Header */}
             <HeaderOne />
-
-            {/* Hero */}
             <HeroOne/>
-
-            {/* About */}
             <AboutOne />
-
-            {/* Services */}
             <ServicesOne /> 
-
-            {/* Works */}
             <Works />
-
-            {/* Faq */}
             <Faq />
-
-            {/* Testimonials */}
             <TestimonialsOne />
-
-            {/* Blogs */}
             <BlogsOne />
-
-            {/* Brands */}
             <BrandsOne />
-
-            {/* Contact */}
             <ContactOne />
-
-            {/* Footer */}
             <FooterOne />
         </>
     );

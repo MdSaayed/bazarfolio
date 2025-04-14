@@ -1,6 +1,5 @@
 import React from 'react';
-import {Subtitle, Title} from "../../components"
-import services_one from "../../data/services-one-data"
+import services_one from "../../data/services-one-data";
 import CardOne from './CardOne';
 
 const ServicesOne = () => {

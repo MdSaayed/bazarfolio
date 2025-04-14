@@ -3,20 +3,16 @@ import React from 'react';
 const CardOne = ({work}) => {
     return (
         <div className="break-inside-avoid relative group mb-12 z-20" >
-            {/* Image */}
-            {
-                work.image && (
-                    <div className='rounded-[20px] overflow-hidden'>
-                        <img
-                            src={work?.image}
-                            alt={work?.title}
-                            className="w-full h-auto object-cover cursor-pointer transition-transform transform duration-800 hover:scale-110 hover:rotate-2"
-                            />
-                    </div>
-                )
-            }
+            {work.image && (
+                <div className='rounded-[20px] overflow-hidden'>
+                    <img
+                        src={work?.image}
+                        alt={work?.title}
+                        className="w-full h-auto object-cover cursor-pointer transition-transform transform duration-800 hover:scale-110 hover:rotate-2"
+                        />
+                </div>
+            )}
 
-            {/* Overlay Text */}
             <div className="w-full mt-6 text-white opacity-100 group-hover:opacity-100 transition">
                 <div className="flex justify-between items-center">
                     <p className="text-base leading-normal">{work?.type}</p>
