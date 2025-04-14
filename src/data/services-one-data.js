@@ -1,7 +1,7 @@
 const services_one = [
   {
     id: 1,
-    icon: "/assets/icons/bezier-curve-solid.svg",
+    icon: "/assets/icons/ui-ux-design.svg",
     title: "UI/UX Design",
     image: "/assets/images/service-1.png",
     excerpt:

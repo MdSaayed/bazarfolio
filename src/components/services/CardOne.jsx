@@ -12,7 +12,7 @@ const CardOne = ({service}) => {
                 </div>
             </div>
 
-            <p className='font-base font-normal leading-normal tracking-desc mt-20 mb-8'>{excerpt}</p>
+            <p className='font-base font-normal leading-normal tracking-desc mt-10 mb-8'>{excerpt}</p>
 
             {
                 image && (

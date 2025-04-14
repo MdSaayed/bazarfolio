@@ -76,16 +76,30 @@
   }
 
 
-  /* hero title */
-  .hero-title{
-    color:var(--color-white);
-    font-size: 72px;
+ /* hero title */
+  .hero-title {
+    color: var(--color-white);
+    font-size: clamp(2rem, 5vw + 1rem, 4.5rem);
     font-weight: 600;
-    height: var(--leading-primary);
+    line-height: var(--leading-primary);
     white-space: nowrap;
     margin-bottom: 1.5rem;
-    /* text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.2] md:whitespace-nowrap mb-6 */
   }
+
+  @media (min-width: 1024px) and (max-width: 1260px) {
+    .hero-title span{
+       display: block;
+    }
+  }
+  
+
+  @media (max-width: 767px) {
+    .hero-title {
+      white-space: normal;
+      margin-bottom: 1rem;  
+    }
+  }
+
 
 
 
