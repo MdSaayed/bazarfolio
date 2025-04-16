@@ -72,7 +72,7 @@ const  WhyChooseUs =()=> {
                 </div>
             </div>
 
-            <div className="relative">
+            <div className="relative rounded-lg">
                 <img
                     src="/assets/images/why-choose-us.png"
                     alt="Office Team"

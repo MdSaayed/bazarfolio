@@ -9,6 +9,7 @@ export { default as ServicesOne } from  './services/ServicesOne';
 export { default as Works } from  './works/Works';
 export { default as Faq } from  './faq/Faq';
 export { default as TestimonialsOne } from  './testimonials/TestimonialsOne';
+export { default as TestimonialsTwo } from  './testimonials/TestimonialsTwo';
 export { default as BrandsOne } from  './brands/BrandsOne';
 export { default as ContactOne } from  './contact/ContactOne';
 export { default as ServiceScroll } from  './service-scroll/ServiceScroll';
