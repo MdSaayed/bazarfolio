@@ -14,7 +14,7 @@ const AboutOne = () => {
                     <div className='space-y-12'>
                         <p className='text text-dark-slate max-w-[750px]'>With a strong passion for design and development, I specialize in creating stunning, user-friendly websites and digital solutions. My journey in (2018-2025)has been all about innovation, problem-solving, and delivering high-quality work that makes a difference.</p>
 
-                        <Link className="kb-btn-primary" to="">More about us
+                        <Link className="btn-primary" to="">More about us
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="20"

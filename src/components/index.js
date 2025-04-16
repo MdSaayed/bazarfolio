@@ -13,3 +13,5 @@ export { default as BrandsOne } from  './brands/BrandsOne';
 export { default as ContactOne } from  './contact/ContactOne';
 export { default as ServiceScroll } from  './service-scroll/ServiceScroll';
 export { default as HeroTwo } from  './hero/HeroTwo';
+export { default as WhyChooseUs } from  './why-choose-us/WhyChooseUs';
+export { default as SkillBar } from  './skill-bar/SkillBar';

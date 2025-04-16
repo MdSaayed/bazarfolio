@@ -6,7 +6,7 @@ const HeroOne = () => {
 
 
     return (
-        <section id='hero' className='kb-hero bg-blue-gray'>
+        <section id='hero' className='hero bg-blue-gray'>
             <div className="container padding-y-20">
                 <div className="relative bg-dark-slate grid grid-cols-1 lg:grid-cols-2 items-center gap-20 md:p-8 lg:p-12 lg:pb-0 rounded-4xl overflow-hidden bg-[url('/assets/images/hero-bg.png')] bg-center bg-blend-overlay bg-cover">
                     <div className='text-white z-20 order-2 lg:order-1' data-aos="fade-up" data-aos-duration="500">
@@ -23,7 +23,7 @@ const HeroOne = () => {
                            A personal portfolio is a collection of your work, achievements, and skills that highlights your abilities and professional growth
                         </p>
 
-                        <a className="kb-btn-primary" href='#works'>View a Works
+                        <a className="btn-primary" href='#works'>View a Works
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="20"

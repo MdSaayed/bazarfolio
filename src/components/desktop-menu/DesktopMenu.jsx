@@ -33,7 +33,7 @@ const DesktopMenu = ({ setMenuOpen, menuItems }) => {
       </div>
 
       <div className='items-center hidden xl:flex'>
-        <a className="kb-btn-primary" href='#contact'>Start a Project
+        <a className="btn-primary" href='#contact'>Start a Project
           <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

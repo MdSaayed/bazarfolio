@@ -22,7 +22,7 @@ const HeroTwo = () => {
                             </div>
                         </div>
 
-                        <a className="kb-btn-primary" href='#works'>View a Works
+                        <a className="btn-primary" href='#works'>View a Works
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="20"
