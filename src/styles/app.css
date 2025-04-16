@@ -76,6 +76,18 @@
     color: transparent;
   }
 
+  .title2-white, .title2-black{
+    color: var(--color-white);
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+    margin-bottom: 1.5rem;
+  }
+  .title2-black{
+    color: var(--color-blue-gray) !important;
+  }
 
  /* hero title */
   .hero-title {
@@ -174,6 +186,31 @@
     background: var(--color-white);
   }
 
+
+  .subtitle2 {
+    font-size: var(--text-xl);
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    line-height: 1.2;
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+  
+  .subtitle2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url('/assets/icons/title-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
   /* Text */
   .text{
     font-size: 1rem;
@@ -215,6 +252,103 @@
     letter-spacing: 0.16px;
     padding-bottom: 10px;
   }
+
+  .outlined-number {
+    color: transparent;
+    -webkit-text-stroke: 1px #A3A3A3;
+    text-stroke: 1px #A3A3A3; 
+  }
+
+
+
+
+
+
+  .custom-timeline .e-timeline-item.e-timeline-active .e-timeline-icon {
+    background-color: #a3ff12;
+    color: black;
+  }
+  
+  .custom-timeline .e-timeline-item .e-timeline-icon {
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #1c1c1c;
+    color: white;
+  }
+  
+  .custom-timeline .e-timeline-content h4 {
+    font-weight: 700;
+    color: #1c1c1c;
+  }
+  .custom-timeline .e-timeline-content p {
+    color: #4b4b4b;
+    font-size: 14px;
+  }
+  
+  .services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .timeline-wrapper h2 {
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .timeline {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: #e0e0e0;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2196F3;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px #2196F3;
+  }
+  
+  .timeline-content {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-left: 30px;
+  }
+  
+  .timeline-content h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-content p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+
+
 
   /* Typing blink */
   @keyframes blink {

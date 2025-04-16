@@ -1,6 +1,7 @@
 import React from 'react';
-import { HeroTwo, ServiceScroll } from '../components';
+import { AboutTwo, HeroTwo, ServiceScroll } from '../components';
 import HeaderOne from '../layouts/headers/HeaderOne';
+import WorksTwo from '../components/works/WorksTwo';
 
 const HomeTwo = () => {
     return (
@@ -8,6 +9,8 @@ const HomeTwo = () => {
             <HeaderOne transparent />
             <HeroTwo />   
             <ServiceScroll />
+            <AboutTwo />
+            <WorksTwo />
         </>
     );
 };

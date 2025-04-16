@@ -3,21 +3,23 @@ import React from 'react';
 const HeroTwo = () => {
     return (
         <section className='bg-[url("/assets/images/hero-bg-2.png")] bg-cover bg-center bg-dark-green'>
-            <div className="container">
+            <div className="container padding-b-0">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-gap-4 items-center justify-between">
                     <div className="space-y-8 order-2 md:order-none text-white">
-                        <div className='hero-subtitle'>
-                            <span>I’m Web a </span>
-                            <span className='text-primary'>Designer</span>                
-                        </div>
-                        
-                        <h1 className='hero-title2'>Stand Out in Every Medium.</h1>
+                        <div className='max-w-[372px] space-y-8 '>
+                            <div className='hero-subtitle2 subtitle2'>
+                                <span>I’m Web a </span>
+                                <span className='text-primary'>Designer</span>                
+                            </div>
+                            
+                            <h1 className='hero-title2'>Stand Out in Every Medium.</h1>
 
-                        <p>A passionate UI/UX designer and frontend developer crafting beautiful, user-focused digital experiences.</p>
+                            <p className='pb-3'>A passionate UI/UX designer and frontend developer crafting beautiful, user-focused digital experiences.</p>
 
-                        <div className='flex items-center gap-4'>
-                            <img src="/assets/images/rating-avatar.png" alt=""/>
-                            <span className='text-base font-normal tracking-desc leading-primary text-white'>Rating 4.9</span>
+                            <div className='flex items-center gap-4'>
+                                <img src="/assets/images/rating-avatar.png" alt=""/>
+                                <span className='text-base font-normal tracking-desc leading-primary text-white'>Rating 4.9</span>
+                            </div>
                         </div>
 
                         <a className="kb-btn-primary" href='#works'>View a Works
