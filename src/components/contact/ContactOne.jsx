@@ -72,7 +72,7 @@ const ContactOne = () => {
                 onChange={handleChange}
                 placeholder="Name"
                 error={errors.name}
-                colSpan="col-span-2 md:col-span-1"
+                colSpan="col-span-2 md:col-span-1" 
               />
               <FormInput
                 name="email"

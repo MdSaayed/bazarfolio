@@ -1,16 +1,44 @@
 import { Mail } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
 import { FiEdit } from "react-icons/fi";
 import ContactItem from "./ContactItem";
+import useEmailJS from "../../hooks/useEmailJS";
 
 const ContactTwo=()=> {
+    const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
+    const [errors, setErrors] = useState({});
+    const { sendEmail, isSending } = useEmailJS();
+  
+    const handleChange = (e) => {
+      setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+  
+    const validate = () => {
+      let tempErrors = {};
+      if (!formData.name) tempErrors.name = 'Name is required';
+      if (!formData.email) tempErrors.email = 'Email is required';
+      if (!formData.subject) tempErrors.subject = 'Subject is required';
+      if (!formData.message) tempErrors.message = 'Message is required';
+      setErrors(tempErrors);
+      return Object.keys(tempErrors).length === 0;
+    };
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      if (validate()) {
+        await sendEmail(formData);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      }
+    };
+
+
   return (
     <section >
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2">
 
             <div className=" flex items-center">
-                <div className="bg-blue-gray text-white rounded-l-2xl p-8 flex-1 space-y-12">
+                <div className="bg-blue-gray text-white rounded-2xl md:rounded-r-none p-8 flex-1 space-y-12">
                     <ContactItem
                         icon= {<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
                                 <g clip-path="url(#clip0_2306_377)">
@@ -69,34 +97,63 @@ const ContactTwo=()=> {
             <div className="bg-lavender-blush rounded-2xl px-8 py-12 flex-1">
                 <h2 className="text-3xl text-gray-800 font-bold mb-6">Get in Touch</h2>
 
-                <form className="space-y-4">
-                    <div className="relative">
-                        <input
-                            type="text"
-                            placeholder="Your Full Name:"
-                            className="w-full border bg-white border-gray-300 rounded-xl px-4 py-3 pr-10 text-sm placeholder:text-base focus:outline-none focus:ring focus:ring-blue-gray"
-                        />
-                        <FiEdit className="absolute w-[20px] right-3 top-1/2 -translate-y-1/2 text-gray-400" />
+                <form onSubmit={handleSubmit} className="space-y-4">
+                    <div>
+                        <div  className="relative">
+                            <input
+                                type="text"
+                                name="name"
+                                onChange={handleChange}
+                                value={formData.name}
+                                placeholder="Your Full Name:"
+                                className="w-full border bg-white border-gray-300 rounded-xl px-4 py-3 pr-10 text-sm placeholder:text-base focus:outline-none focus:ring focus:ring-blue-gray"
+                            />
+                            <FiEdit className="absolute w-[20px] right-3 top-1/2 -translate-y-1/2 text-gray-400" />
+                        </div>
+                        {errors.name && <p className="text-red-500">{errors.name}</p>}
                     </div>
-                    <div className="relative">
-                        <input
-                            type="text"
-                            placeholder="Enter E-Mail:"
-                            className="w-full border bg-white border-gray-300 rounded-xl px-4 py-3 pr-10 text-sm placeholder:text-base focus:outline-none focus:ring focus:ring-blue-gray"
-                        />
-                        <Mail className="absolute w-[20px] right-3 top-1/2 -translate-y-1/2 text-gray-400" />
+
+                    <div>
+                        <div className="relative">
+                            <input
+                                type="text"
+                                name="email"
+                                onChange={handleChange}
+                                value={formData.email}
+                                placeholder="Enter E-Mail:"
+                                className="w-full border bg-white border-gray-300 rounded-xl px-4 py-3 pr-10 text-sm placeholder:text-base focus:outline-none focus:ring focus:ring-blue-gray"
+                            />
+                            <Mail className="absolute w-[20px] right-3 top-1/2 -translate-y-1/2 text-gray-400" />
+                            {errors.email && <p className="text-red-500">{errors.email}</p>}
+                        </div>
                     </div>
-                    <select className="select-arrow w-full border bg-white border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring focus:ring-blue-gray text-gray-500">
-                        <option disabled selected>Select Subject:</option>
-                        <option>General Inquiry</option>
-                        <option>Support</option>
-                        <option>Feedback</option>
-                    </select>
-                    <textarea
+
+                    <div>
+                        <select 
+                            className="select-arrow w-full border bg-white border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring focus:ring-blue-gray text-gray-500" 
+                            name="subject"
+                            onChange={handleChange}
+                            value={formData.subject}
+                            >
+                            <option disabled selected>Select Subject:</option>
+                            <option>General Inquiry</option>
+                            <option>Support</option>
+                            <option>Feedback</option>
+                        </select>
+                        {errors.subject && <p className="text-red-500">{errors.subject}</p>}
+                    </div>
+
+                    <div>
+                        <textarea
                         placeholder='Write Message:'
+                        name="message"
+                        onChange={handleChange}
+                        value={formData.message}
                         rows="5"
                         className="w-full border bg-white border-gray-300 rounded-xl px-4 py-3 text-sm placeholder:text-base focus:outline-none focus:ring focus:ring-blue-gray"
                         ></textarea>
+                        {errors.message && <p className="text-red-500">{errors.message}</p>}
+                    </div>
 
                     <label className="flex items-center gap-2 text-sm">
                         <input type="checkbox" className="form-checkbox" />
