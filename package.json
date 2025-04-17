@@ -28,6 +28,7 @@
     "react-typewriter-effect": "^1.1.0",
     "simple-typewriter": "^0.0.1",
     "sweetalert2": "^11.17.2",
+    "swiper": "^11.2.6",
     "tailwindcss": "^4.1.3"
   },
   "devDependencies": {

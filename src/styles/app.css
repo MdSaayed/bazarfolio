@@ -30,6 +30,7 @@
     --color-primary:#AEFE3A;
     --color-lavender-blue :#8B74F5;
     --color-dark-green:#171A17;
+    --color-lavender-blush:#FBF9FF;
 
     --tracking-desc:0.16px;
     --leading-primary:1.2;
@@ -268,6 +269,21 @@
     height: 1px;
     width: 3rem;
     background-color: var(--color-blue-gray);
+  }
+
+  .select-arrow {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="gray" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+    padding-right: 2.5rem;  
+  }
+
+  select::-ms-expand {
+    display: none;
   }
   
   
